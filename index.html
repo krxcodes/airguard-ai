@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AirGuard AI — Detect compressed air leaks using just your smartphone. AI-powered ultrasonic leak detection to reduce energy costs and improve compressor efficiency.">
+    <meta name="keywords" content="compressed air leak detection, AI, ultrasonic, energy savings, compressor efficiency, MSME, predictive maintenance">
+    <meta name="author" content="AirGuard AI">
+    <meta name="theme-color" content="#0A2463">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="AirGuard AI — AI-Powered Compressed Air Leak Detection">
+    <meta property="og:description" content="Reduce energy costs, improve compressor efficiency, and minimize air leakage using AI-powered ultrasonic leak detection.">
+    <meta property="og:type" content="website">
+    
+    <title>AirGuard AI — AI-Powered Compressed Air Leak Detection</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loader">
+            <div class="loader-ring"></div>
+            <div class="loader-text">
+                <span class="loader-logo">🛡️</span>
+                <span>AirGuard AI</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo" aria-label="AirGuard AI Home">
+                <span class="logo-icon">🛡️</span>
+                <span class="logo-text">AirGuard<span class="logo-accent">AI</span></span>
+            </a>
+            <div id="nav-links" class="nav-links">
+                <a href="#home" class="nav-link active" data-page="home">Home</a>
+                <a href="#problem" class="nav-link" data-page="problem">Problem</a>
+                <a href="#solution" class="nav-link" data-page="solution">Solution</a>
+                <a href="#demo" class="nav-link" data-page="demo">Live Demo</a>
+                <a href="#dashboard" class="nav-link" data-page="dashboard">Dashboard</a>
+                <a href="#ai-features" class="nav-link" data-page="ai-features">AI Features</a>
+                <a href="#benefits" class="nav-link" data-page="benefits">Benefits</a>
+                <a href="#tech" class="nav-link" data-page="tech">Tech Stack</a>
+                <a href="#about" class="nav-link" data-page="about">About</a>
+                <a href="#contact" class="nav-link" data-page="contact">Contact</a>
+                <a href="#blog" class="nav-link" data-page="blog">Blog</a>
+            </div>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light mode">
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
+                <a href="#demo" class="nav-cta">Start Detection</a>
+                <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="mobile-menu">
+        <div class="mobile-menu-content">
+            <a href="#home" class="mobile-link" data-page="home">Home</a>
+            <a href="#problem" class="mobile-link" data-page="problem">Problem</a>
+            <a href="#solution" class="mobile-link" data-page="solution">Solution</a>
+            <a href="#demo" class="mobile-link" data-page="demo">Live Demo</a>
+            <a href="#dashboard" class="mobile-link" data-page="dashboard">Dashboard</a>
+            <a href="#ai-features" class="mobile-link" data-page="ai-features">AI Features</a>
+            <a href="#benefits" class="mobile-link" data-page="benefits">Benefits</a>
+            <a href="#tech" class="mobile-link" data-page="tech">Tech Stack</a>
+            <a href="#about" class="mobile-link" data-page="about">About</a>
+            <a href="#contact" class="mobile-link" data-page="contact">Contact</a>
+            <a href="#blog" class="mobile-link" data-page="blog">Blog</a>
+        </div>
+    </div>
+
+    <!-- Main Content (all sections rendered here) -->
+    <main id="main-content">
+        <section id="home" class="page-section"></section>
+        <section id="problem" class="page-section"></section>
+        <section id="solution" class="page-section"></section>
+        <section id="demo" class="page-section"></section>
+        <section id="dashboard" class="page-section"></section>
+        <section id="ai-features" class="page-section"></section>
+        <section id="benefits" class="page-section"></section>
+        <section id="tech" class="page-section"></section>
+        <section id="about" class="page-section"></section>
+        <section id="contact" class="page-section"></section>
+        <section id="blog" class="page-section"></section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" class="footer"></footer>
+
+    <!-- Demo Request Modal -->
+    <div id="demo-modal" class="modal-overlay">
+        <div class="modal-content glass-card">
+            <button class="modal-close" id="modal-close">&times;</button>
+            <h2 class="modal-title">Request a Demo</h2>
+            <p class="modal-subtitle">See AirGuard AI in action. Fill in your details and we'll get back to you within 24 hours.</p>
+            <form id="demo-form" class="modal-form">
+                <div class="form-group">
+                    <label for="demo-name">Full Name</label>
+                    <input type="text" id="demo-name" name="name" required placeholder="John Doe">
+                </div>
+                <div class="form-group">
+                    <label for="demo-email">Email</label>
+                    <input type="email" id="demo-email" name="email" required placeholder="john@company.com">
+                </div>
+                <div class="form-group">
+                    <label for="demo-company">Company</label>
+                    <input type="text" id="demo-company" name="company" placeholder="Your Company">
+                </div>
+                <div class="form-group">
+                    <label for="demo-phone">Phone</label>
+                    <input type="tel" id="demo-phone" name="phone" placeholder="+91 98765 43210">
+                </div>
+                <div class="form-group">
+                    <label for="demo-message">Message (optional)</label>
+                    <textarea id="demo-message" name="message" rows="3" placeholder="Tell us about your compressed air system..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">Submit Request</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/data.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/components.js"></script>
+    <script src="js/pages/home.js"></script>
+    <script src="js/pages/problem.js"></script>
+    <script src="js/pages/solution.js"></script>
+    <script src="js/pages/demo.js"></script>
+    <script src="js/pages/dashboard.js"></script>
+    <script src="js/pages/aifeatures.js"></script>
+    <script src="js/pages/benefits.js"></script>
+    <script src="js/pages/techstack.js"></script>
+    <script src="js/pages/about.js"></script>
+    <script src="js/pages/contact.js"></script>
+    <script src="js/pages/blog.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

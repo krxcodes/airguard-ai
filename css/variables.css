@@ -1,0 +1,166 @@
+/* ========================================
+   AirGuard AI — CSS Custom Properties
+   Design tokens for the entire site
+   ======================================== */
+
+:root {
+    /* ---- Primary Blues ---- */
+    --blue-950: #0A1628;
+    --blue-900: #0A2463;
+    --blue-800: #1E3A8A;
+    --blue-700: #1D4ED8;
+    --blue-600: #2563EB;
+    --blue-500: #3B82F6;
+    --blue-400: #60A5FA;
+    --blue-300: #93C5FD;
+    --blue-200: #BFDBFE;
+    --blue-100: #DBEAFE;
+    --blue-50: #EFF6FF;
+
+    /* ---- Greens ---- */
+    --green-700: #047857;
+    --green-600: #059669;
+    --green-500: #10B981;
+    --green-400: #34D399;
+    --green-300: #6EE7B7;
+    --green-200: #A7F3D0;
+    --green-100: #D1FAE5;
+
+    /* ---- Neutrals ---- */
+    --gray-950: #020617;
+    --gray-900: #0F172A;
+    --gray-800: #1E293B;
+    --gray-700: #334155;
+    --gray-600: #475569;
+    --gray-500: #64748B;
+    --gray-400: #94A3B8;
+    --gray-300: #CBD5E1;
+    --gray-200: #E2E8F0;
+    --gray-100: #F1F5F9;
+    --gray-50: #F8FAFC;
+    --white: #FFFFFF;
+
+    /* ---- Semantic Colors ---- */
+    --danger: #EF4444;
+    --warning: #F59E0B;
+    --success: #10B981;
+    --info: #3B82F6;
+
+    /* ---- Theme (Light Mode) ---- */
+    --bg-primary: var(--white);
+    --bg-secondary: var(--gray-50);
+    --bg-tertiary: var(--gray-100);
+    --bg-card: var(--white);
+    --bg-glass: rgba(255, 255, 255, 0.7);
+    --bg-glass-hover: rgba(255, 255, 255, 0.85);
+    --bg-overlay: rgba(10, 36, 99, 0.5);
+    --bg-hero: linear-gradient(135deg, var(--blue-900) 0%, var(--blue-700) 50%, var(--blue-600) 100%);
+    --bg-section-alt: linear-gradient(180deg, var(--gray-50) 0%, var(--white) 100%);
+
+    --text-primary: var(--gray-900);
+    --text-secondary: var(--gray-600);
+    --text-tertiary: var(--gray-400);
+    --text-on-dark: var(--white);
+    --text-accent: var(--blue-600);
+    --text-accent-green: var(--green-600);
+
+    --border-color: var(--gray-200);
+    --border-glass: rgba(255, 255, 255, 0.3);
+
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.05);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
+    --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+    --shadow-glow-blue: 0 0 30px rgba(37, 99, 235, 0.3);
+    --shadow-glow-green: 0 0 30px rgba(16, 185, 129, 0.3);
+
+    /* ---- Typography ---- */
+    --font-heading: 'Outfit', sans-serif;
+    --font-body: 'Inter', sans-serif;
+
+    --text-xs: 0.75rem;
+    --text-sm: 0.875rem;
+    --text-base: 1rem;
+    --text-lg: 1.125rem;
+    --text-xl: 1.25rem;
+    --text-2xl: 1.5rem;
+    --text-3xl: 1.875rem;
+    --text-4xl: 2.25rem;
+    --text-5xl: 3rem;
+    --text-6xl: 3.75rem;
+    --text-7xl: 4.5rem;
+
+    /* ---- Spacing ---- */
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 0.75rem;
+    --space-4: 1rem;
+    --space-5: 1.25rem;
+    --space-6: 1.5rem;
+    --space-8: 2rem;
+    --space-10: 2.5rem;
+    --space-12: 3rem;
+    --space-16: 4rem;
+    --space-20: 5rem;
+    --space-24: 6rem;
+    --space-32: 8rem;
+
+    --section-padding: var(--space-24) var(--space-6);
+    --container-max: 1280px;
+    --container-sm: 768px;
+    --container-lg: 1440px;
+
+    /* ---- Border Radius ---- */
+    --radius-sm: 0.375rem;
+    --radius-md: 0.5rem;
+    --radius-lg: 0.75rem;
+    --radius-xl: 1rem;
+    --radius-2xl: 1.5rem;
+    --radius-full: 9999px;
+
+    /* ---- Transitions ---- */
+    --transition-fast: 150ms ease;
+    --transition-base: 250ms ease;
+    --transition-slow: 350ms ease;
+    --transition-spring: 500ms cubic-bezier(0.34, 1.56, 0.64, 1);
+
+    /* ---- Z-indices ---- */
+    --z-base: 1;
+    --z-dropdown: 10;
+    --z-sticky: 50;
+    --z-overlay: 100;
+    --z-modal: 200;
+    --z-loading: 1000;
+
+    /* ---- Navbar ---- */
+    --navbar-height: 72px;
+}
+
+/* ====== Dark Mode Overrides ====== */
+body.dark {
+    --bg-primary: var(--gray-950);
+    --bg-secondary: var(--gray-900);
+    --bg-tertiary: var(--gray-800);
+    --bg-card: var(--gray-800);
+    --bg-glass: rgba(15, 23, 42, 0.7);
+    --bg-glass-hover: rgba(15, 23, 42, 0.85);
+    --bg-overlay: rgba(0, 0, 0, 0.6);
+    --bg-hero: linear-gradient(135deg, var(--gray-950) 0%, var(--blue-900) 50%, var(--blue-800) 100%);
+    --bg-section-alt: linear-gradient(180deg, var(--gray-900) 0%, var(--gray-950) 100%);
+
+    --text-primary: var(--gray-100);
+    --text-secondary: var(--gray-400);
+    --text-tertiary: var(--gray-500);
+    --text-accent: var(--blue-400);
+    --text-accent-green: var(--green-400);
+
+    --border-color: var(--gray-700);
+    --border-glass: rgba(255, 255, 255, 0.1);
+
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.4);
+    --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
